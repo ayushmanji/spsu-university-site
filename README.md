@@ -8,17 +8,17 @@ A modern ASP.NET Core Razor Pages web application built for SPSU University. Thi
 
 ### ✅ Home Page
 
-![Home](screenshot/Screenshot%202025-12-14%20210313.png)
+![Home](screenshort/Screenshot%202025-12-14%20210313.png)
 
 ---
 
 ## 🚀 Features
 
-* 🔹 Razor Pages with clean architecture (Application, Core, Infrastructure, Web)
-* 🔹 Entity Framework Core for data access
-* 🔹 Bootstrap-based responsive UI
-* 🔹 Custom SPSU branding and logo
-* 🔹 Full CRUD for Students, Courses, Instructors, and Departments
+* Razor Pages with clean architecture (Application, Core, Infrastructure, Web)
+* Entity Framework Core for data access
+* Bootstrap-based responsive UI
+* Custom SPSU branding and logo
+* Full CRUD for Students, Courses, Instructors, and Departments
 
 ---
 
