@@ -8,7 +8,7 @@ A modern ASP.NET Core Razor Pages web application built for SPSU University. Thi
 
 ### ✅ Home Page
 
-![Home](screenshort/Screenshot 2025-12-14 210313.png)
+![Home](screenshot/Screenshot%202025-12-14%20210313.png)
 
 ---
 
