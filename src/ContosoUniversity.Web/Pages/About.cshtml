@@ -1,29 +1,29 @@
 ﻿@page
 @model AboutModel
 @{
-    ViewData["Title"] = "Students Body Statistics";
+    ViewData["Title"] = "Student Enrollment Statistics - SPSU";
 }
 
-<h2>Students Body Statistics</h2>
+<h2>Student Enrollment Statistics</h2>
 
-<table>
-    <tr>
-        <th>
-            Enrollments Date
-        </th>
-        <th>
-            Students
-        </th>
-    </tr>
-    @foreach (var item in Model.StudentTotals)
-    {
+<p>
+    This section presents enrollment trends at <strong>Sir Padampat Singhania University (SPSU)</strong>, reflecting the growth and diversity of our student body across various programs and years.
+</p>
+
+<table class="table table-striped">
+    <thead>
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.EnrollmentDate)
-            </td>
-            <td>
-                @item.StudentCount
-            </td>
+            <th>Enrollment Date</th>
+            <th>Number of Students</th>
         </tr>
-    }
+    </thead>
+    <tbody>
+        @foreach (var item in Model.StudentTotals)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.EnrollmentDate)</td>
+                <td>@item.StudentCount</td>
+            </tr>
+        }
+    </tbody>
 </table>

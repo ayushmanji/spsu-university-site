@@ -1,11 +1,11 @@
 ﻿@page
-@model ErrorModel
+@model ContosoUniversity.Web.Pages.ErrorModel
 @{
-    ViewData["Title"] = "Error";
+    ViewData["Title"] = "SPSU - Application Error";
 }
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+<h1 class="text-danger">Oops! Something went wrong.</h1>
+<h2 class="text-danger">An unexpected error occurred while processing your request.</h2>
 
 @if (Model.ShowRequestId)
 {
@@ -14,10 +14,20 @@
     </p>
 }
 
-<h3>Development Mode</h3>
+<hr />
+
+<h3>Need Help?</h3>
 <p>
-    Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
+    If this problem continues, please contact the SPSU IT Department or system administrator.
+</p>
+
+<h3>Developer Info</h3>
+<p>
+    To see full error details, enable the <strong>Development</strong> environment.
 </p>
 <p>
-    <strong>Development environment should not be enabled in deployed applications</strong>, as it can result in sensitive information from exceptions being displayed to end users. For local debugging, development environment can be enabled by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>, and restarting the application.
+    You can do this by setting the <code>ASPNETCORE_ENVIRONMENT</code> environment variable to <strong>Development</strong> and restarting the application.
+</p>
+<p class="text-muted">
+    <em>Note: Development mode should never be enabled in production as it may expose sensitive information.</em>
 </p>
